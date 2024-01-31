@@ -1,0 +1,191 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Jacques+Francois+Shadow&family=Poppins&display=swap');
+ :root{
+    --primary-color : #A1A1A1;
+    --secondary-color: #0F1035;
+    --text-color:#365486;
+    --link-color:#7FC7D9;
+}
+*{
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 ;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-size: 10px;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+ .button{
+  display: none;
+}
+.button button{
+    width: 4rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    padding-top: 0.3rem;
+}
+.button button span{
+    width: 100%;
+    height: .4rem;
+    background: white;
+    border-radius: 0.2rem;
+}
+.button button span:nth-child(2){
+    width: 75%;
+}
+.button button span:nth-child(3){
+    width: 50%;
+}
+.elon{
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: Jacques Francois Shadow;
+}
+.liens{
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+}
+a{
+    color : white;
+    text-decoration: none;
+}
+.liens>a{
+    color : var(--link-color);
+    text-decoration: none;
+    padding: 0rem 2rem;
+}
+.liens>a:hover{
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    transition: all 1sec ease;
+    border: 0.01rem solid;
+    border-radius: 1rem;
+    font-family: poppins;
+}
+.section1{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    /* background-color:red; */
+}
+.image{
+    flex: 1;
+    height:99%;
+    /* width: 100vw; */
+    background-image: url(/assets/images/elon1.png);
+    background-size: cover;
+    padding: 0.1rem;
+}
+.text{
+    flex: 3;
+    padding: 1rem 5rem;
+    flex-direction: column;
+}
+.text p{
+    color:var(--text-color);
+    font-size: 1rem ;
+    font-family: Poppins;
+}
+footer {
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+    height: 30%;
+    text-align: center;
+    font-family: poppins;
+    align-self: center;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+}
+footer h1 {
+    color: var(--primary-color);
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    justify-content: end;
+    position: absolute;
+    bottom: 3;
+}
+
+@media screen and (max-width:800px){
+    *{
+        padding: 0;
+        margin: 0;
+         overflow-y: hidden;
+        overflow-x: hidden; */
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100vw;
+        color: white;
+        font-size: 10px;
+        background-color: var(--primary-color);
+        box-sizing: border-box;
+    
+}
+nav{
+
+}
+.button{
+     display: contents;
+}
+.elon{
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: Jacques Francois Shadow;
+}
+.liens a{
+ visibility: hidden;
+}
+.section1{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+}
+.image{
+    height: 39%;
+    width: 30%;
+    padding: 3rem;
+    justify-content: center;
+    justify-content: end;
+    align-items: center;
+    align-self: center;
+}
+.text{
+    padding: 0;
+    margin: 2rem;
+}
+}
